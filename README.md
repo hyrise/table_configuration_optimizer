@@ -73,18 +73,18 @@ Further workload examples are provided in `/data/workloads`.
 
 To evaluate the performance of the determined table configurations for a given dataset and workload in Hyrise, we provide a benchmark in the  `krichly/chunk_sort_compression_advanced` branch. The benchmark is implemented in the playground of Hyrise that is stored at `src/bin/playground.cpp`. To execute the benchmark, it is necessary to setup Hyrise. A step-by-step guide to get, setup, and run Hyrise is provided [here](https://github.com/hyrise/hyrise/wiki/Step-by-Step-Guide). The playground is built with the following command:
 
-  make hyrisePlayground
+    make hyrisePlayground
 
 As input for the benchmark, the user has to provide a set of table configurations determined by the models and exported as .csv files, the workload, and the dataset in the `data` folder. The benchmark is executed with the command: 
 
-  ./hyrisePlayground
+    ./hyrisePlayground
 
 For each table configuration, the benchmark applies the defined tuning options (compression, indexing, sorting, and tiering configuration) and executes the workload on the table. Afterward, the performance (runtime of each query) and the memory consumption of each table configuration are exported as .csv file.
 
 Furthermore, we implemented a microbenchmark in `src/benchmark/ping_data_micro_benchmark.cpp` that determines for a given dataset the input parameters for the models (runtime and memory consumption). To build the microbenchmarks, the following command is used:  
 
-  make hyriseMicroBenchmarks
+    make hyriseMicroBenchmarks
 
 Based on the dataset, the chunk size and the column names have to be adjusted. The benchmark can be executed by the command:  
 
-  ./hyriseMicroBenchmarks --benchmark_out=../../out/performance.csv --benchmark_out_format=csv --benchmark_repetitions=5 --benchmark_filter="BM_PingData" --benchmark_min_time=5 --benchmark_display_aggregates_only=true
+    ./hyriseMicroBenchmarks --benchmark_out=../../out/performance.csv --benchmark_out_format=csv --benchmark_repetitions=5 --benchmark_filter="BM_PingData" --benchmark_min_time=5 --benchmark_display_aggregates_only=true
