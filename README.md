@@ -14,7 +14,7 @@ Shortened DBLP BibTeX entry:
   journal   = {Proc. {VLDB} Endow.},
   volume    = {15},
   number    = {13},
-  pages     = {4079 - 4092},
+  pages     = {4079--4092},
   year      = {2022},
   url       = {https://www.vldb.org/pvldb/vol15/p4079-richly.pdf},
   doi       = {10.14778/3565838.3565858}
