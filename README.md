@@ -8,7 +8,7 @@ In case you have any questions, please contact [Keven Richly](https://hpi.de/pla
 
 Shortened DBLP BibTeX entry:
 ```bibtex
-@article{DBLP:journals/pvldb/Richly22,
+@article{DBLP:journals/pvldb/RichlySB22,
   author    = {Keven Richly and Rainer Schlosser and Martin Boissier},
   title     = {Budget-Conscious Fine-Grained Configuration Optimization for Spatio-Temporal Applications},
   journal   = {Proc. {VLDB} Endow.},
@@ -16,7 +16,7 @@ Shortened DBLP BibTeX entry:
   number    = {13},
   pages     = {4079 - 4092},
   year      = {2022},
-  url       = {tba},
+  url       = {https://www.vldb.org/pvldb/vol15/p4079-richly.pdf},
   doi       = {10.14778/3565838.3565858}
 }
 ```
